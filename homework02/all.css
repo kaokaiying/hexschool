@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  以下bannaer 區 */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    background-image:url(https://hexschool.github.io/webLayoutTraining1st/week2/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 1920px;
+    height: 958px;
+    border: 1px solid #707070;
+    opacity: 1;
+    margin:0 auto;
+}
+
+.banner-text{
+    text-align: center;
+    padding-top: 356px;
+}
+
+.banner h1{
+    font: italic normal 900 80px/94px "Roboto";
+    color: white;
+}
+
+.banner h3:first-of-type{
+    font:italic normal bold 24px/36px "Roboto";
+    color: white;
+}
+
+.banner h3{
+    font:italic normal bold 24px/36px "Roboto";
+    color: white;
+}
+
+.behance{
+    width: 60px;
+    height: 60px;
+    background: transparent url('img/iconfinder_18_social_2609550.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.banner-text img{
+    margin-top: 48px;
+    margin-bottom: 268px;
+}
+
+/*  以下 about 區 */
+.about{
+    width:30%;
+    text-align:center;
+}
+
+.about h3{
+    font:italic normal bold 24px/36px "Roboto";
+    color: rgb(0, 0, 0);
+}
+
+.about h3:nth-of-type(3){
+    padding-bottom:24px;
+    border-bottom:1px solid #000000;
+}
+
+
+.dot-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-bottom:56px;
+}
+
+li{
+    font: italic normal bold 24px/42px "Roboto";
+}
+
+.dot{
+    display: inline-block;
+    width:22px;height:22px;
+    border-radius:999em;
+    background-color:#891818;
+    margin-right: 16px;
+}
+
+
+/*  以下 My Brand ‘’XXXD’’ 區 */
+
+
+.container2{
+    background-color:#000000;
+    color: #ffffff;
+}
+
+.mybrand h3{
+    padding-top:16px;
+    text-align:center;
+    font: italic normal medium 24px/42px "Roboto";
+}
+
+.mybrand p{
+    text-align:center;
+}
+
+
+.mybrand-img{
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    padding-top:68px;
+    padding-bottom:40px;
+}
+
+
+.mybrand-img2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:160px;
+}
+
+.mybrand-text p{
+    text-align: center;
+    font: italic normal medium 20px/30px "Roboto";
+    line-height:30px;
+}
+
+/*  以下 Other Works 區 */
+.work{
+    padding-bottom:160px;
+}
+
+
+
+.entitle p{
+    font-size:64px;
+    font-family: roboto;
+    font-style:italic;
+    padding-bottom:24px;
+    line-height:75px;
+    text-align:center;
+    padding-top:64px;
+
+}
+
+
+.work1,.work2,.work3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work2 img:nth-of-type(2) {
+    padding-left:24px;
+}
+
+
+.detail p{
+    text-align: center;
+    padding-bottom:56px;
+}
+
+.work-list{
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 16px;
+    padding-bottom: 56px;
+}
+
+.work-list li{
+    display: inline-block;
+}
+
+/*  以下 Contact 區 */
+
+.footer{
+    color: white;
+    background-color:black;
+}
+
+.footer-text{
+    padding-top:16px;
+    padding-bottom:80px;
+}
+
+.footer-text p{
+    font-size:24px;
+    font-family: roboto;
+    font-style:italic;
+    line-height:36px;
+    text-align:center;
+}
